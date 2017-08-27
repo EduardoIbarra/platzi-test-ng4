@@ -14,10 +14,4 @@ describe('UserComponent', () => {
     let app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
-  it('should have the same user list than the user service', () => {
-    let fixture = TestBed.createComponent(UserComponent);
-    let app = fixture.debugElement.componentInstance;
-    let userService = fixture.debugElement.injector.get(UserService);
-    expect(app.users).toEqual(userService.users);
-  })
 });
